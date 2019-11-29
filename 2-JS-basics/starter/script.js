@@ -305,23 +305,142 @@ if (height === '23'){
 GOOD LUCK 😀
 */
 
-var teamJohn = (' team John');
-var avarageTeamJohn = (89 + 120 + 103) / 3;
-console.log(avarageTeamJohn);
-
-var teamMike = (' team Mike');
-var avarageTeamMike = (116 + 94 + 123) / 3;
-console.log(avarageTeamMike);
+/*
+var teamJohn = (120 + 120 + 120) / 3;
+console.log(teamJohn);
 
 
+var teamMike = (120 + 120 + 120) / 3;
+console.log(teamMike);
 
-switch (true){
-    case avarageTeamJohn > avarageTeamMike:
-        console.log(teamJohn + ' wins the game!');
-        break;
-    case avarageTeamMike > avarageTeamJohn:
-        console.log(teamMike + ' wins the game!');
-        break;
-    default:
-        console.log('Both teams have an equal score.');
+if (teamMike > teamJohn) {
+    console.log('Team Mike wins!');
+} else if (teamJohn > teamMike){
+    console.log('Team John wins!');
+} else {
+    console.log('It\'s a draw!');
 }
+
+var teamMary = (120 + 120 + 120) / 3;
+console.log(teamMary);
+
+if (teamJohn > teamMary && teamJohn > teamMike) {
+    console.log('Team John wins with a score of ' + teamJohn);
+} else if (teamMary > teamJohn && teamMary > teamMike) {
+    console.log('Team Mary wins with a score of ' + teamMary);
+} else if (teamMike > teamMary && teamMike >  teamJohn) {
+    console.log('Team Mike wins with a score of ' + teamMike);
+} else {
+    console.log('It\'s a draw between all the teams.');
+}
+*/
+
+/****************************
+ * Functions
+ */
+/*
+ function calculateAge(birthYear){
+     return 2018 - birthYear;
+ }
+
+ var ageJohn = calculateAge(1990);
+ var ageMike = calculateAge(1948);
+ var ageJane = calculateAge(1969);
+ console.log(ageJohn, ageMike, ageJane);
+
+
+ function yearsUntilRetirement(year, firstName) {
+     var age = calculateAge(year);
+     var retirement = 65 - age;
+     
+     if (retirement > 0) {
+        console.log(firstName + ' retires in ' + retirement + ' years.');
+    } else {
+        console.log(firstName + ' is already retired.');
+    }
+ }
+
+ yearsUntilRetirement(1990, 'John');
+ yearsUntilRetirement(1948, 'Mike');
+ yearsUntilRetirement(1969, 'Jane');
+ */
+
+
+
+
+
+ /********************************
+  * Function Statements and Expressions
+  */
+/*
+// Function declaration
+// function whatDoYouDo(job, firstName) {}
+
+// Function expression
+var whatDoYouDo = function(job, firstName) {
+    switch(job){
+        case 'teacher':
+            return firstName + ' teaches kids how to code.';
+        case 'driver': 
+            return firstName + ' drives a cab in Lisbon.';
+        case 'designer':
+            return firstName + ' designs beautiful websites.';
+        default:
+            return firstName + ' does something else.'
+    }
+}
+
+console.log(whatDoYouDo('teacher', 'John'));
+console.log(whatDoYouDo('designer', 'Jane'));
+console.log(whatDoYouDo('retired', 'Mark'));
+
+*/
+
+
+/***************************************************
+ * Arrays
+ */
+/*
+ // Initialize new array
+ var names = ['John', 'Mark', 'Jane'];
+ var years = new Array(1990, 1969, 1948);
+
+ console.log(names[2]);
+ console.log(names.length);
+
+ // Mutate array data
+ names[1] = 'Ben';
+ names [names.length] = 'Mary';
+ console.log(names);
+
+ // Different data types
+ var john = ['John', 'Smith', 1990, 'designer', false];
+
+ john.push('blue');
+ john.unshift('Mr.');
+ console.log(john);
+
+ john.pop();
+ john.pop();
+ john.shift();
+ console.log(john);
+
+ console.log(john.indexOf(23));
+
+
+ var isDesigner = john.indexOf('designer') === -1 ? 'John is NOT a designer.' : 'John IS a designer.';
+console.log(isDesigner);
+*/
+/*
+John and his family went on a holiday and went to 3 different restaurants. The bills were $124, $48 and $268.
+
+To tip the waiter a fair amount, John created a simple tip calculator (as a function). He likes to tip 20% of the bill when the bill is less than $50, 15% when the bill is between $50 and $200, and 10% if the bill is more than $200.
+
+In the end, John would like to have 2 arrays:
+1) Containing all three tips (one for each bill)
+2) Containing all three final paid amounts (bill + tip).
+
+(NOTE: To calculate 20% of a value, simply multiply it with 20/100 = 0.2)
+
+GOOD LUCK 😀
+*/
