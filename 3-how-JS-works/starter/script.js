@@ -95,7 +95,7 @@ function calculateAge(year) {
     console.log(this); //Window
 }
 */
-
+/*
 var john = {
     name: 'john',
     yearOfBirth: 1990,
@@ -108,10 +108,11 @@ var john = {
             console.log(this); // Window
         }
         innerFunction();
-        */
+        *//*
     }
-}
-
+} 
+*/
+/*
 john.calculateAge();
 
 var mike =  {
@@ -123,3 +124,4 @@ var mike =  {
 mike.calculateAge = john.calculateAge;
 mike.calculateAge();
 
+*/
